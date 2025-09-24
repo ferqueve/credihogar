@@ -1,0 +1,116 @@
+/* ===== Estilos para CrediHogar ===== */
+body {
+    font-family: 'Nunito', sans-serif;
+    background-color: #f8f9fa;
+}
+.brand-name {
+    font-weight: 700;
+    font-size: 1.5rem;
+    color: #f6f7f8;
+}
+
+.navbar-hogar {
+    background: linear-gradient(135deg, #2c3e50 0%, #4a6491 100%);
+    box-shadow: 0 4px 12px rgba(44, 62, 80, 0.2);
+}
+
+.navbar-hogar .nav-link,
+.navbar-hogar .navbar-brand {
+    color: white !important;
+    font-weight: 600;
+}
+
+.navbar-hogar .nav-link:hover {
+    color: #bdc3c7 !important;
+}
+
+/* Hero Section */
+.hero-section {
+    background: linear-gradient(135deg, #ecf0f1 0%, #bdc3c7 100%);
+    border-radius: 0 0 2rem 2rem;
+    margin-top: -1rem;
+    padding: 3rem 1rem;
+}
+
+.hero-section h1 {
+    color: #2c3e50;
+    font-size: 2.5rem;
+}
+
+.hero-section p {
+    font-size: 1.2rem;
+    color: #5a5a5a;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Títulos de sección */
+.section-title {
+    color: #2c3e50;
+    position: relative;
+    display: inline-block;
+    padding-bottom: 10px;
+}
+
+.section-title::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 4px;
+    background: #3498db;
+    border-radius: 2px;
+}
+
+/* Estilos de formularios */
+.form-select-hogar,
+.form-control-hogar {
+    border-radius: 12px;
+    border: 2px solid #bdc3c7;
+    padding: 10px 15px;
+    font-weight: 600;
+    transition: all 0.3s;
+}
+
+.form-select-hogar:focus,
+.form-control-hogar:focus {
+    border-color: #3498db;
+    box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.2);
+}
+
+/* Botones */
+.btn-outline-hogar {
+    border-color: #3498db;
+    color: #3498db;
+    border-radius: 50px;
+    font-weight: 600;
+}
+
+.btn-outline-hogar:hover {
+    background-color: #3498db;
+    color: white;
+}
+
+.btn-hogar-primary {
+    background: linear-gradient(135deg, #3498db, #2c3e50);
+    border: none;
+    border-radius: 50px;
+    font-weight: 700;
+    color: white;
+}
+
+/* Cards de productos */
+.card-img-top {
+    height: 250px;
+    object-fit: cover;
+    border-bottom: 4px solid #ecf0f1;
+}
+
+/* Footer */
+footer {
+    background: linear-gradient(135deg, #2c3e50, #4a6491);
+    color: white;
+    font-weight: 600;
+}
