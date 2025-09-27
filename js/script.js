@@ -144,38 +144,38 @@ function checkout() {
                 let message = '';
                 if (isHogar) {
                     message = `
-Hola, quiero hacer un pedido en ${config.name}.%0A
+Hola, quiero hacer un pedido en ${config.name}.
 %0A
-*DATOS DEL CLIENTE*%0A
-Nombre: ${data.name}%0A
-Cédula: ${data.id}%0A
-Dirección: ${data.address}%0A
-Ciudad: ${data.city}%0A
-Teléfono: ${data.phone}%0A
-%0A
-*PRODUCTOS*%0A
-${itemsList}%0A
-%0A
-*TOTAL: $${total.toFixed(2)}*%0A
-${data.installments ? '*PAGO EN CUOTAS*' : '*PAGO CONTADO*'}%0A
-%0A
+*DATOS DEL CLIENTE*
+Nombre: ${data.name}.
+Cédula: ${data.id}.
+Dirección: ${data.address}.
+Ciudad: ${data.city}.
+Teléfono: ${data.phone}.
+.
+*PRODUCTOS*.
+${itemsList}
+
+*TOTAL: $${total.toFixed(2)}*
+${data.installments ? '*PAGO EN CUOTAS*' : '*PAGO CONTADO*'}.
+
 ¡Gracias!
                     `.trim();
                 } else {
                     message = `
-Hola, quiero hacer un pedido en ${config.name}.%0A
-%0A
-*DATOS DEL CLIENTE*%0A
-Nombre: ${data.name}%0A
-Dirección: ${data.address}%0A
-Teléfono: ${data.phone}%0A
-%0A
-*PRODUCTOS SELECCIONADOS*%0A
-${itemsList}%0A
-%0A
-*TOTAL A PAGAR: $${total.toFixed(2)}*%0A
-%0A
-¡Gracias! Espero su confirmación para vestir con amor a mi peque 🧸
+Hola, quiero hacer un pedido en ${config.name}.
+
+*DATOS DEL CLIENTE*
+Nombre: ${data.name}.
+Dirección: ${data.address}.
+Teléfono: ${data.phone}.
+
+*PRODUCTOS SELECCIONADOS*
+${itemsList}
+
+*TOTAL A PAGAR: $${total.toFixed(2)}*
+
+¡Gracias! Espero su confirmación para vestir con amor a mi peque 🧸.
                     `.trim();
                 }
 
