@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CrediHogar — Productos y confort para tu casa</title>
+    <title>CrediHogar — Financiación en Cuotas para tu Hogar</title>
     <!-- Bootstrap 5 -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- Font Awesome -->
@@ -22,8 +22,8 @@
     <nav class="navbar navbar-expand-lg navbar-hogar">
         <div class="container">
             <a class="navbar-brand d-flex align-items-center" href="#">
-                <img src="img/logo.png" alt="CrediHogar" class="me-2" style="height: 50px; border-radius: 12px;">
-                <span class="brand-name">Credi Hogar</span>
+                <img src="img/logo-hogar.png" alt="CrediHogar" class="me-2" style="height: 50px; border-radius: 12px;">
+                <span class="brand-name">CrediHogar</span>
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
@@ -56,8 +56,8 @@
 
     <!-- Hero Section -->
     <div class="hero-section text-center py-5 mb-5">
-        <h1 class="display-4 fw-bold">¡Confort y Calidad para tu Hogar! 🛋️🏡</h1>
-        <p class="lead">Muebles, decoración y artículos para hacer de tu casa un lugar único.</p>
+        <h1 class="display-4 fw-bold">¡Financiación en Cuotas para tu Hogar! 🛋️🏡</h1>
+        <p class="lead">Muebles, electrodomésticos y artículos para hacer de tu casa un lugar cómodo y moderno. ¡Hasta 12 cuotas sin recargo!</p>
         <div class="d-flex justify-content-center mt-4">
             <span class="badge bg-success text-white me-2"><i class="fas fa-check"></i> Calidad Garantizada</span>
             <span class="badge bg-info text-white"><i class="fas fa-truck"></i> Envíos a todo Uruguay</span>
@@ -74,9 +74,10 @@
                 <select id="categoryFilter" class="form-select form-select-hogar">
                     <option value="">Todas las categorías</option>
                     <option value="muebles">Muebles</option>
-                    <option value="decoracion">Decoración</option>
+                    <option value="electrodomesticos">Electrodomésticos</option>
                     <option value="cocina">Cocina</option>
                     <option value="textiles">Textiles</option>
+                    <option value="decoracion">Decoración</option>
                 </select>
             </div>
             <div class="col-md-4">
@@ -106,7 +107,7 @@
         <p class="mb-0">
             <i class="fas fa-home text-primary"></i> Hecho con calidad para tu hogar.
             <br>
-            <small>© 2025 CrediHogar - Salto, Uruguay</small>
+            <small>© 2025 CrediHogar - Montevideo, Uruguay</small>
         </p>
     </footer>
 
@@ -187,6 +188,9 @@
                             <button class="nav-link" id="clients-tab" data-bs-toggle="tab" data-bs-target="#clients" type="button">Clientes</button>
                         </li>
                         <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="accounts-tab" data-bs-toggle="tab" data-bs-target="#accounts" type="button">Control de Cuentas</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
                             <button class="nav-link" id="whatsapp-tab" data-bs-toggle="tab" data-bs-target="#whatsapp" type="button">WhatsApp</button>
                         </li>
                         <li class="nav-item" role="presentation">
@@ -215,9 +219,10 @@
                                             <label class="form-label">Categoría</label>
                                             <select class="form-select" name="category" required>
                                                 <option value="muebles">Muebles</option>
-                                                <option value="decoracion">Decoración</option>
+                                                <option value="electrodomesticos">Electrodomésticos</option>
                                                 <option value="cocina">Cocina</option>
                                                 <option value="textiles">Textiles</option>
+                                                <option value="decoracion">Decoración</option>
                                             </select>
                                         </div>
                                     </div>
@@ -280,8 +285,13 @@
                         <!-- Pestaña: Clientes -->
                         <div class="tab-pane fade" id="clients" role="tabpanel">
                             <h5>👥 Gestión de Clientes</h5>
-                            <button class="btn btn-primary mb-3" id="addClientBtn">+ Agregar Cliente</button>
                             <div id="clientsList"></div>
+                        </div>
+
+                        <!-- Pestaña: Control de Cuentas -->
+                        <div class="tab-pane fade" id="accounts" role="tabpanel">
+                            <h5>📊 Control de Cuentas por Cliente</h5>
+                            <div class="row g-3" id="accountsList"></div>
                         </div>
 
                         <!-- Pestaña: WhatsApp -->
